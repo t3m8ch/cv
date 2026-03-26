@@ -10,8 +10,10 @@
 
 = Кудяков Артём Александрович
 
+Системный программист
+
 #grid(
-  columns: (auto, 1fr),
+  columns: (auto, 1fr, 1fr),
   gutter: 1em,
   avatar("photo.jpg", size: 1.8cm),
   [
@@ -24,25 +26,17 @@
 == Навыки
 
 #grid(
-  columns: (1.1fr, 1.1fr, 2fr),
+  columns: (1fr, 1fr),
   gutter: 1em,
   [
     - Rust
     - C, C++
     - Golang
-    - Python, Bash
-  ],
-  [
-    - HTML + CSS
-    - JavaScript
-    - TypeScript
-    - React
   ],
   [
     - Linux (ALT Linux, Fedora, Debian, Ubuntu)
     - Docker
     - Git, CI/CD, Github Actions
-    - Тестирование кода
   ],
 )
 
