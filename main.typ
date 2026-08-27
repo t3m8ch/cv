@@ -9,6 +9,8 @@
 )
 
 #set text(size: 10pt)
+#show link: set text(fill: blue)
+#show link: underline
 
 = Кудяков Артём Александрович
 
@@ -83,6 +85,8 @@ Backend-разработчик Go, системный программист
 == Преподавание и публичные выступления
 
 Веду практические занятия по Linux, Git и LaTeX в СГУ (t.me/ssu_mit). Читаю
-технические лекции, некоторые из них выкладываются на YouTube. Одна из них
-набрала 81 тысячу просмотров \ (youtu.be/WKKTzPYP18k).
+технические лекции, некоторые из них выкладываются на YouTube.
+#link("https://youtu.be/WKKTzPYP18k")[Одна из них] набрала *81 тысячу просмотров*.
+Также у меня есть #link("https://youtube.com/playlist?list=PLIz9eWHArYfigzmsCCp7ZlB3BZMsZFE4E")[серия лекций про Docker]
+и лекция, которая называется #link("https://youtu.be/bwLfNSGUDBA")[«Беды с HTTP»].
 
