@@ -33,16 +33,19 @@ Backend-разработчик Go, системный программист
   columns: (1fr, 1fr),
   gutter: 1em,
   [
-    - Go
+    - Golang (в том числе goroutines, \ channels, context)
     - C, C++
     - Rust
     - Python
+    - JavaScript, TypeScript, React
   ],
   [
-    - JavaScript, TypeScript, React
-    - Linux (ALT Linux, Fedora, Debian, Ubuntu)
+    - REST
+    - PostgreSQL
+    - Linux, Bash
     - Docker
     - Git, CI/CD, GitHub Actions
+    - Английский B1
   ],
 )
 
@@ -67,11 +70,13 @@ Backend-разработчик Go, системный программист
 - Сервис для автоматического тестирования решений задач на
   C++ с подачей входных данных в stdin и валидацией выходных из stdout.
 - Первая версия реализована на *Go* с использованием *Docker* для
-  изоляции запускаемых программ (github.com/t3m8ch/coderunner).
+  изоляции запускаемых программ (github.com/t3m8ch/coderunner); в ней активно
+  применялись *горутины и каналы*; взаимодействие с сервисом происходит при
+  помощи *Redis pub/sub*, а хранение файлов через *MinIO*.
 - Вторая версия реализована на *Rust* (github.com/dsc-sgu/coderunner).
 - В ней я реализовал изоляцию процессов *без Docker* с использованием *namespaces*
-  и *cgroups* с меньшими накладными расходами по сравнению с Docker.
-- Написал асинхронный backend с использованием *Tokio* и протокола *gRPC*.
+  и *cgroups* с меньшими накладными расходами по сравнению с Docker; backend
+  использовал протокол *gRPC*.
 
 *Frontend для образовательной платформы MergeMinds*: github.com/dsc-sgu/mm-frontend
 - В основе образовательной платформы лежит сдача заданий при помощи Git, что
