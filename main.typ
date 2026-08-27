@@ -10,14 +10,14 @@
 
 = Кудяков Артём Александрович
 
-Системный программист
+Backend-разработчик, Системный программист
 
 #grid(
   columns: (auto, 1fr, 1fr),
   gutter: 1em,
   avatar("photo.jpg", size: 1.8cm),
   [
-    #fa-icon("telegram") t.me/another_tg_user \
+    #fa-icon("telegram") t.me/ThisIsT3m8ch \
     #fa-icon("envelope") t3m8ch\@yandex.ru \
     #fa-icon("github") github.com/t3m8ch
   ],
@@ -29,16 +29,28 @@
   columns: (1fr, 1fr),
   gutter: 1em,
   [
-    - Rust
     - C, C++
+    - Rust
     - Golang
+    - Python
   ],
   [
+    - JavaScript, TypeScript, React
     - Linux (ALT Linux, Fedora, Debian, Ubuntu)
     - Docker
     - Git, CI/CD, Github Actions
   ],
 )
+
+== Коммерческий опыт
+
+Стажировка в компании Базальт СПО, которая длилась 3 месяца: с 4 мая по
+3 августа 2026 года. В рамках неё я участвовал в разработке системы по
+удалённой настройке компьютеров на базе операционной системы ALT Linux.
+Проект имеет открытый исходный код и хорошо задокументрован:
+altlinux.space/t3m8ch/password-agent
+
+Проект разработан с использованием C/C++/GTK/QT.
 
 == Образование
 
@@ -54,6 +66,8 @@
   и *cgroups* для безопасного исполнения недоверенного кода с меньшими
   накладными расходами по сравнению с Docker.
 - Написал асинхронный backend с использованием *Tokio* и протокола *gRPC*.
+- Предыдущая версия этого сервиса была написана на *Golang*, в нём применяется
+  *Docker* (github.com/t3m8ch/coderunner).
 
 *Система плагинов для fullstack-приложения*: github.com/t3m8ch/sgu-coursework
 - Разработал прототип системы плагинов для fullstack-приложения на *Rust* и
@@ -63,6 +77,14 @@
 - Спроектировал событийную модель обмена между плагинами, backend и frontend
   через JSON-описание UI-дерева.
 
+*Frontend для образовательной платформы MergeMinds*: github.com/dsc-sgu/mm-frontend
+- В основе образовательной платформы лежит сдача заданий при помощи Git, что
+  позволяет студенту приблизится к опыту на реальной работе.
+- Написан на TypeScript + React + Tanstack Query + Tanstack Router с применением
+  библиотеки компонентов Shadcn и TailwindCSS.
+- Реализованы сложные страницы, вроде diff'ов между попытками, которые отправили
+  студенты на задания; это позволяет преподавателю лучше понимать, что студент
+  поменял в своём решении.
 
 == Преподавание и публичные выступления
 
